@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;/*allows to include padding and border in an element's total height and width*/
+    font-family:'Poppins',sans-serif;
+}
+section{
+    display:flex;/*sets an element as flexbox. flexbox arranges items in rows or columns*/
+    justify-content: center;/*alings content of flexbox along the main axis of flexbox container*/
+    align-items:center;
+    width:100%;
+    height:100vh;
+    background:url('work2.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+@keyframes animatebg{
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+.login-box{
+    position:relative;
+    background-color:pink;
+    height:450px;
+    width:400px;
+    border-radius:20px;
+    display:flex;   
+    justify-content: center;
+    align-items:center; 
+    border:2px solid rgba(255,255,255,.5);
+    backdrop-filter:blur(15px);
+}
+ 
+h1{
+    text-align:left;
+    color:white;
+    font-size: 2em;
+}
+
+.input-box{
+    position:relative;
+    width:310px;
+    margin:30px 0px;
+    border-bottom:2px solid white;
+}
+
+.input-box label{
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%); 
+    font-size:1em;
+    color:white;
+    pointer-events:none;
+    transition:.5s;
+}
+
+.input-box input:focus~label{
+    top:-5px;
+}
+
+.input-box input{
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:1em;
+    color:white;
+    padding:0px 35px 0px 5px;
+}
+
+.remember-forgot{
+    margin:-15px 0px 15px;
+    font-size: .9em;
+    color:white;
+    display: flex;
+    justify-content:space-between;
+}
+
+.remember-forgot label input{
+    margin:3px;
+}
+
+.remember-forgot a{
+    color:white;
+    text-decoration:none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+button {
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:1em;
+    color:black;
+    font-weight:500;
+}
+
+.register-link{
+    color:white;
+    margin:25px 0px 10px;
+    text-align:center;
+    font-size:.9em;
+}
+
+.register-link a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+#register{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:1em;
+    color:black;
+    font-weight:500;
+    
+}

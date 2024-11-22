@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Task</title>
+    <script>
+        function search(){
+            var request=new XMLHttpRequest();
+
+            request.open("GET","process_search_task.php");
+
+            request.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    console.log(this.responseText);
+
+                    document.getElementById("search").innerHTML=this.responseText;
+                }
+            };
+
+            request.send();
+        }
+        </script>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="search_task.css">
+        
+</head>
+<body>
+    <form name="form" method="post">
+       <pre>
+        <div id="form">
+            <button type="button" onClick="search()">Task List</button>
+            <div id="search"></div>
+        </div>
+        </pre>
+    </form>
+</body>
+</html>

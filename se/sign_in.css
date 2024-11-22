@@ -1,0 +1,32 @@
+body{
+    background-image: url('work2.webp');
+}
+
+#sign_in{
+    background-color: rgb(244, 205, 212);
+    width:500px;
+    height:400px;
+    margin-left:390px;
+    margin-top:50px;
+    border-radius: 70px;
+    font-size:20px;
+} 
+
+input{
+    font-size:25px;
+    border: none;
+    margin-bottom:5px;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: -28px;
+    margin-top: -28px;
+    margin-left: 100px;
+}
+
+input[type="submit"]{
+    position: relative;
+    left:180px;
+}
